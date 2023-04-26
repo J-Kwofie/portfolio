@@ -13,9 +13,9 @@ import { LinkItem } from '../../types/navigationTypes';
 const NavItem = ({ linkItem }: { linkItem: LinkItem }) => {
   const { link, text } = linkItem;
   return (
-    <NavLink to={`${link}`}>
-      <span>{text}</span>
-    </NavLink>
+    <li>
+      <NavLink to={`${link}`}>{text}</NavLink>
+    </li>
   );
 };
 export default NavItem;

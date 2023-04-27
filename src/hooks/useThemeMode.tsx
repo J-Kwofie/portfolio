@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export const useThemeMode = () => {
   const localTheme = window.localStorage.getItem('theme');
@@ -10,7 +10,10 @@ export const useThemeMode = () => {
     setTheme(mode);
   };
 
-  const themeToggler = () => (theme === 'dark' ? setMode('light') : setMode('dark'));
+  const themeToggler = () => {
+    console.log('Mee');
+    theme === 'dark' ? setMode('light') : setMode('dark');
+  };
 
   return { theme, themeToggler };
 };

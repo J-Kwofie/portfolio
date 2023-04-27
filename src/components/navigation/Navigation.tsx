@@ -1,3 +1,5 @@
+import { ThemeContext, useThemeMode } from '../../contexts/ThemeContext';
+import { NavStyles } from '../../styled/NavigationStyled';
 import NavItem from './NavItem';
 import NavItemList from './NavItemList';
 import { navListData } from './navListData';
@@ -8,12 +10,23 @@ import { navListData } from './navListData';
  * @returns {JSX.Element} - The rendered navigation component.
  */
 const Navigation = () => {
+  const { theme, themeToggler } = useThemeMode();
+  console.log(theme, 'TTTTTTTTTTTTT');
   return (
-    <NavItemList
-      items={navListData}
-      resourceName={'linkItem'}
-      navItemComponent={NavItem}
-    />
+    <NavStyles>
+      <ul className="menu-list">
+        <NavItemList
+          items={navListData}
+          resourceName={'linkItem'}
+          navItemComponent={NavItem}
+        />
+        <button onClick={themeToggler}>
+          <span className="material-symbols-outlined">
+            {theme === 'dark' ? 'dark_mode' : 'light_mode'}
+          </span>
+        </button>
+      </ul>
+    </NavStyles>
   );
 };
 

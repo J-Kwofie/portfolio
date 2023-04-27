@@ -17,8 +17,8 @@ const NavItemList = ({
 }: NavItemListType) => {
   return (
     <>
-      {items.map((item, index) => (
-        <NavItemComponent key={index} linkItem={item} {...{ [resourceName]: item }} />
+      {items.map((item) => (
+        <NavItemComponent key={item.key} linkItem={item} {...{ [resourceName]: item }} />
       ))}
     </>
   );

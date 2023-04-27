@@ -2,27 +2,33 @@ import { LinkItem } from '../../types/navigationTypes';
 
 export const navListData: LinkItem[] = [
   {
-    link: 'dashboard',
-    text: 'Dashboard',
+    link: 'home',
+    text: 'Home',
     key: 0,
-    id: 'dashboard',
+    id: 'home',
   },
   {
-    link: 'student',
-    text: 'Student',
+    link: 'skills',
+    text: 'Skills',
     key: 1,
-    id: 'dashboard',
+    id: 'skills',
   },
   {
-    link: 'lecturer',
-    text: 'Lecturer',
+    link: 'qualification',
+    text: 'Qualification',
     key: 2,
-    id: 'lecturer',
+    id: 'qualification',
   },
   {
-    link: 'lecturer',
-    text: 'Ghana',
-    key: 2,
-    id: 'lecturer',
+    link: 'projects',
+    text: 'Projects',
+    key: 3,
+    id: 'projects',
+  },
+  {
+    link: 'contact',
+    text: 'Contact',
+    key: 4,
+    id: 'contact',
   },
 ];

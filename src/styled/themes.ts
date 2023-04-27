@@ -1,7 +1,4 @@
-export interface ThemeProps {
-  background: string;
-  textColor: string;
-}
+import { ThemeProps } from '../types/themeTypes';
 
 export const darkTheme: ThemeProps = {
   background: 'var(--dark-background)',

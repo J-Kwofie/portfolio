@@ -4,6 +4,7 @@ export interface LinkItem {
   link: string;
   text: string;
   key: number;
+  icon: string;
   id: string;
 }
 

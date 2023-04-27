@@ -3,15 +3,14 @@ import styled from 'styled-components';
 import { GlobalThemeProps } from '../types/themeTypes';
 
 export const HeaderStyles = styled.header`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 2rem;
+  z-index: 100;
 
-  .logo {
-    color: ${({ theme }: GlobalThemeProps) => theme.textColor};
-    font-weight: var(--font-medium);
-  }
-  .menu-icon {
-    cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    position: unset;
   }
 `;

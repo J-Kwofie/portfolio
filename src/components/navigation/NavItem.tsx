@@ -11,10 +11,13 @@ import { LinkItem } from '../../types/navigationTypes';
  */
 
 const NavItem = ({ linkItem }: { linkItem: LinkItem }) => {
-  const { link, text } = linkItem;
+  const { link, text, icon } = linkItem;
   return (
-    <li>
-      <NavLink to={`${link}`}>{text}</NavLink>
+    <li className="nav-item">
+      <NavLink to={`${link}`} className="nav-link">
+        <span className="material-symbols-outlined icon">{icon}</span>
+        {text}
+      </NavLink>
     </li>
   );
 };

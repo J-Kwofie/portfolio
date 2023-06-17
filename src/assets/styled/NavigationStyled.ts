@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { GlobalThemeProps } from '../types/themeTypes';
+import { GlobalThemeProps } from '../../types/themeTypes';
 
 export const NavStyles = styled.nav`
   height: calc(var(--header-height) + 0.5rem);

@@ -1,9 +1,8 @@
 import { useRef } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
+import { HeaderStyles, NavStyles } from '../assets/styled';
 import Navigation from '../components/navigation/Navigation';
-import { HeaderStyles } from '../styled/HeaderStyled';
-import { NavStyles } from '../styled/NavigationStyled';
 import { ThemeTogglerProps } from '../types/themeTypes';
 
 const Layout = ({ themeToggler, theme }: ThemeTogglerProps) => {

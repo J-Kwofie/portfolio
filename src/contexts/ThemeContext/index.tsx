@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import { darkTheme, lightTheme } from '../../assets/styled/';
 import useThemeMode from '../../hooks/useThemeMode';
-import { darkTheme, lightTheme } from '../../styled/themes';
 
 const ThemeContext: React.FC = ({ children }) => {
   const { theme } = useThemeMode();
